@@ -5,21 +5,21 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kpeople
-Version  : 5.50.0
-Release  : 4
-URL      : https://download.kde.org/stable/frameworks/5.50/kpeople-5.50.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.50/kpeople-5.50.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.50/kpeople-5.50.0.tar.xz.sig
+Version  : 5.51.0
+Release  : 5
+URL      : https://download.kde.org/stable/frameworks/5.51/kpeople-5.51.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.51/kpeople-5.51.0.tar.xz
+Source99 : https://download.kde.org/stable/frameworks/5.51/kpeople-5.51.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : LGPL-2.1
-Requires: kpeople-lib
-Requires: kpeople-license
-Requires: kpeople-data
-Requires: kpeople-locales
+Requires: kpeople-data = %{version}-%{release}
+Requires: kpeople-lib = %{version}-%{release}
+Requires: kpeople-license = %{version}-%{release}
+Requires: kpeople-locales = %{version}-%{release}
 BuildRequires : buildreq-cmake
 BuildRequires : buildreq-kde
-BuildRequires : qtbase-dev qtbase-extras mesa-dev
+BuildRequires : qtbase-dev mesa-dev
 
 %description
 # KPeople
@@ -37,9 +37,9 @@ data components for the kpeople package.
 %package dev
 Summary: dev components for the kpeople package.
 Group: Development
-Requires: kpeople-lib
-Requires: kpeople-data
-Provides: kpeople-devel
+Requires: kpeople-lib = %{version}-%{release}
+Requires: kpeople-data = %{version}-%{release}
+Provides: kpeople-devel = %{version}-%{release}
 
 %description dev
 dev components for the kpeople package.
@@ -48,8 +48,8 @@ dev components for the kpeople package.
 %package lib
 Summary: lib components for the kpeople package.
 Group: Libraries
-Requires: kpeople-data
-Requires: kpeople-license
+Requires: kpeople-data = %{version}-%{release}
+Requires: kpeople-license = %{version}-%{release}
 
 %description lib
 lib components for the kpeople package.
@@ -72,25 +72,25 @@ locales components for the kpeople package.
 
 
 %prep
-%setup -q -n kpeople-5.50.0
+%setup -q -n kpeople-5.51.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1536435300
-mkdir clr-build
+export SOURCE_DATE_EPOCH=1539639668
+mkdir -p clr-build
 pushd clr-build
 %cmake ..
-make  %{?_smp_mflags}
+make  %{?_smp_mflags} VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1536435300
+export SOURCE_DATE_EPOCH=1539639668
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/kpeople
-cp COPYING %{buildroot}/usr/share/doc/kpeople/COPYING
+mkdir -p %{buildroot}/usr/share/package-licenses/kpeople
+cp COPYING %{buildroot}/usr/share/package-licenses/kpeople/COPYING
 pushd clr-build
 %make_install
 popd
@@ -105,11 +105,13 @@ popd
 /usr/share/kservicetypes5/kpeople_data_source.desktop
 /usr/share/kservicetypes5/kpeople_plugin.desktop
 /usr/share/kservicetypes5/persondetailsplugin.desktop
+/usr/share/xdg/kpeople.categories
 
 %files dev
 %defattr(-,root,root,-)
 /usr/include/KF5/KPeople/KPeople/Global
 /usr/include/KF5/KPeople/KPeople/PersonData
+/usr/include/KF5/KPeople/KPeople/PersonPluginManager
 /usr/include/KF5/KPeople/KPeople/PersonsModel
 /usr/include/KF5/KPeople/KPeople/Widgets/AbstractFieldWidgetFactory
 /usr/include/KF5/KPeople/KPeople/Widgets/Actions
@@ -124,6 +126,7 @@ popd
 /usr/include/KF5/KPeople/kpeople/global.h
 /usr/include/KF5/KPeople/kpeople/kpeople_export.h
 /usr/include/KF5/KPeople/kpeople/persondata.h
+/usr/include/KF5/KPeople/kpeople/personpluginmanager.h
 /usr/include/KF5/KPeople/kpeople/personsmodel.h
 /usr/include/KF5/KPeople/kpeople/widgets/abstractfieldwidgetfactory.h
 /usr/include/KF5/KPeople/kpeople/widgets/actions.h
@@ -150,17 +153,17 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5People.so.5
-/usr/lib64/libKF5People.so.5.50.0
+/usr/lib64/libKF5People.so.5.51.0
 /usr/lib64/libKF5PeopleBackend.so.5
-/usr/lib64/libKF5PeopleBackend.so.5.50.0
+/usr/lib64/libKF5PeopleBackend.so.5.51.0
 /usr/lib64/libKF5PeopleWidgets.so.5
-/usr/lib64/libKF5PeopleWidgets.so.5.50.0
+/usr/lib64/libKF5PeopleWidgets.so.5.51.0
 /usr/lib64/qt5/qml/org/kde/people/libKF5PeopleDeclarative.so
 /usr/lib64/qt5/qml/org/kde/people/qmldir
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/kpeople/COPYING
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/kpeople/COPYING
 
 %files locales -f kpeople5.lang
 %defattr(-,root,root,-)
