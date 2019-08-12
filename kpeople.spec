@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kpeople
-Version  : 5.60.0
-Release  : 17
-URL      : https://download.kde.org/stable/frameworks/5.60/kpeople-5.60.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.60/kpeople-5.60.0.tar.xz
-Source99 : https://download.kde.org/stable/frameworks/5.60/kpeople-5.60.0.tar.xz.sig
+Version  : 5.61.0
+Release  : 18
+URL      : https://download.kde.org/stable/frameworks/5.61/kpeople-5.61.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.61/kpeople-5.61.0.tar.xz
+Source1 : https://download.kde.org/stable/frameworks/5.61/kpeople-5.61.0.tar.xz.sig
 Summary  : A library that provides access to all contacts and the people who hold them
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -74,16 +74,17 @@ locales components for the kpeople package.
 
 
 %prep
-%setup -q -n kpeople-5.60.0
+%setup -q -n kpeople-5.61.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1563063492
+export SOURCE_DATE_EPOCH=1565598180
 mkdir -p clr-build
 pushd clr-build
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -97,7 +98,7 @@ make  %{?_smp_mflags} VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1563063492
+export SOURCE_DATE_EPOCH=1565598180
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kpeople
 cp COPYING %{buildroot}/usr/share/package-licenses/kpeople/COPYING
@@ -163,11 +164,11 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5People.so.5
-/usr/lib64/libKF5People.so.5.60.0
+/usr/lib64/libKF5People.so.5.61.0
 /usr/lib64/libKF5PeopleBackend.so.5
-/usr/lib64/libKF5PeopleBackend.so.5.60.0
+/usr/lib64/libKF5PeopleBackend.so.5.61.0
 /usr/lib64/libKF5PeopleWidgets.so.5
-/usr/lib64/libKF5PeopleWidgets.so.5.60.0
+/usr/lib64/libKF5PeopleWidgets.so.5.61.0
 /usr/lib64/qt5/qml/org/kde/people/libKF5PeopleDeclarative.so
 /usr/lib64/qt5/qml/org/kde/people/qmldir
 
