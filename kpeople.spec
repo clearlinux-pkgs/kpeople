@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kpeople
-Version  : 5.61.0
-Release  : 18
-URL      : https://download.kde.org/stable/frameworks/5.61/kpeople-5.61.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.61/kpeople-5.61.0.tar.xz
-Source1 : https://download.kde.org/stable/frameworks/5.61/kpeople-5.61.0.tar.xz.sig
+Version  : 5.62.0
+Release  : 19
+URL      : https://download.kde.org/stable/frameworks/5.62/kpeople-5.62.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.62/kpeople-5.62.0.tar.xz
+Source1 : https://download.kde.org/stable/frameworks/5.62/kpeople-5.62.0.tar.xz.sig
 Summary  : A library that provides access to all contacts and the people who hold them
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -74,14 +74,14 @@ locales components for the kpeople package.
 
 
 %prep
-%setup -q -n kpeople-5.61.0
+%setup -q -n kpeople-5.62.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1565598180
+export SOURCE_DATE_EPOCH=1568916998
 mkdir -p clr-build
 pushd clr-build
 # -Werror is for werrorists
@@ -94,11 +94,11 @@ export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
 export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 %cmake ..
-make  %{?_smp_mflags} VERBOSE=1
+make  %{?_smp_mflags}  VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1565598180
+export SOURCE_DATE_EPOCH=1568916998
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kpeople
 cp COPYING %{buildroot}/usr/share/package-licenses/kpeople/COPYING
@@ -130,6 +130,7 @@ popd
 /usr/include/KF5/KPeople/KPeople/Widgets/PersonDetailsDialog
 /usr/include/KF5/KPeople/KPeople/Widgets/PersonDetailsView
 /usr/include/KF5/KPeople/KPeopleBackend/AbstractContact
+/usr/include/KF5/KPeople/KPeopleBackend/AbstractEditableContact
 /usr/include/KF5/KPeople/KPeopleBackend/AbstractPersonAction
 /usr/include/KF5/KPeople/KPeopleBackend/AllContactsMonitor
 /usr/include/KF5/KPeople/KPeopleBackend/BasePersonsDataSource
@@ -146,6 +147,7 @@ popd
 /usr/include/KF5/KPeople/kpeople/widgets/persondetailsdialog.h
 /usr/include/KF5/KPeople/kpeople/widgets/persondetailsview.h
 /usr/include/KF5/KPeople/kpeoplebackend/abstractcontact.h
+/usr/include/KF5/KPeople/kpeoplebackend/abstracteditablecontact.h
 /usr/include/KF5/KPeople/kpeoplebackend/abstractpersonaction.h
 /usr/include/KF5/KPeople/kpeoplebackend/allcontactsmonitor.h
 /usr/include/KF5/KPeople/kpeoplebackend/basepersonsdatasource.h
@@ -164,11 +166,11 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5People.so.5
-/usr/lib64/libKF5People.so.5.61.0
+/usr/lib64/libKF5People.so.5.62.0
 /usr/lib64/libKF5PeopleBackend.so.5
-/usr/lib64/libKF5PeopleBackend.so.5.61.0
+/usr/lib64/libKF5PeopleBackend.so.5.62.0
 /usr/lib64/libKF5PeopleWidgets.so.5
-/usr/lib64/libKF5PeopleWidgets.so.5.61.0
+/usr/lib64/libKF5PeopleWidgets.so.5.62.0
 /usr/lib64/qt5/qml/org/kde/people/libKF5PeopleDeclarative.so
 /usr/lib64/qt5/qml/org/kde/people/qmldir
 
