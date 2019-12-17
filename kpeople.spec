@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kpeople
-Version  : 5.64.0
-Release  : 21
-URL      : https://download.kde.org/stable/frameworks/5.64/kpeople-5.64.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.64/kpeople-5.64.0.tar.xz
-Source1 : https://download.kde.org/stable/frameworks/5.64/kpeople-5.64.0.tar.xz.sig
+Version  : 5.65.0
+Release  : 22
+URL      : https://download.kde.org/stable/frameworks/5.65/kpeople-5.65.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.65/kpeople-5.65.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.65/kpeople-5.65.0.tar.xz.sig
 Summary  : A library that provides access to all contacts and the people who hold them
 Group    : Development/Tools
 License  : LGPL-2.1
@@ -40,7 +40,6 @@ Group: Development
 Requires: kpeople-lib = %{version}-%{release}
 Requires: kpeople-data = %{version}-%{release}
 Provides: kpeople-devel = %{version}-%{release}
-Requires: kpeople = %{version}-%{release}
 Requires: kpeople = %{version}-%{release}
 
 %description dev
@@ -74,17 +73,17 @@ locales components for the kpeople package.
 
 
 %prep
-%setup -q -n kpeople-5.64.0
+%setup -q -n kpeople-5.65.0
+cd %{_builddir}/kpeople-5.65.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1573423972
+export SOURCE_DATE_EPOCH=1576543079
 mkdir -p clr-build
 pushd clr-build
-# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -98,10 +97,10 @@ make  %{?_smp_mflags}  VERBOSE=1
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1573423972
+export SOURCE_DATE_EPOCH=1576543079
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kpeople
-cp %{_builddir}/kpeople-5.64.0/COPYING %{buildroot}/usr/share/package-licenses/kpeople/01a6b4bf79aca9b556822601186afab86e8c4fbf
+cp %{_builddir}/kpeople-5.65.0/COPYING %{buildroot}/usr/share/package-licenses/kpeople/01a6b4bf79aca9b556822601186afab86e8c4fbf
 pushd clr-build
 %make_install
 popd
@@ -165,11 +164,11 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5People.so.5
-/usr/lib64/libKF5People.so.5.64.0
+/usr/lib64/libKF5People.so.5.65.0
 /usr/lib64/libKF5PeopleBackend.so.5
-/usr/lib64/libKF5PeopleBackend.so.5.64.0
+/usr/lib64/libKF5PeopleBackend.so.5.65.0
 /usr/lib64/libKF5PeopleWidgets.so.5
-/usr/lib64/libKF5PeopleWidgets.so.5.64.0
+/usr/lib64/libKF5PeopleWidgets.so.5.65.0
 /usr/lib64/qt5/qml/org/kde/people/libKF5PeopleDeclarative.so
 /usr/lib64/qt5/qml/org/kde/people/qmldir
 
