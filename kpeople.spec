@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kpeople
-Version  : 5.89.0
-Release  : 42
-URL      : https://download.kde.org/stable/frameworks/5.89/kpeople-5.89.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.89/kpeople-5.89.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.89/kpeople-5.89.0.tar.xz.sig
+Version  : 5.90.0
+Release  : 43
+URL      : https://download.kde.org/stable/frameworks/5.90/kpeople-5.90.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.90/kpeople-5.90.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.90/kpeople-5.90.0.tar.xz.sig
 Summary  : A library that provides access to all contacts and the people who hold them
 Group    : Development/Tools
 License  : CC0-1.0 LGPL-2.1
@@ -24,9 +24,6 @@ BuildRequires : kcoreaddons-dev
 BuildRequires : ki18n-dev
 BuildRequires : kitemviews-dev
 BuildRequires : kwidgetsaddons-dev
-BuildRequires : qtbase-dev
-BuildRequires : qtbase-dev mesa-dev
-BuildRequires : qtdeclarative-dev
 
 %description
 
@@ -78,15 +75,15 @@ locales components for the kpeople package.
 
 
 %prep
-%setup -q -n kpeople-5.89.0
-cd %{_builddir}/kpeople-5.89.0
+%setup -q -n kpeople-5.90.0
+cd %{_builddir}/kpeople-5.90.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1639682465
+export SOURCE_DATE_EPOCH=1642012510
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -102,12 +99,12 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1639682465
+export SOURCE_DATE_EPOCH=1642012510
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kpeople
-cp %{_builddir}/kpeople-5.89.0/LICENSES/CC0-1.0.txt %{buildroot}/usr/share/package-licenses/kpeople/82da472f6d00dc5f0a651f33ebb320aa9c7b08d0
-cp %{_builddir}/kpeople-5.89.0/LICENSES/LGPL-2.1-or-later.txt %{buildroot}/usr/share/package-licenses/kpeople/6f1f675aa5f6a2bbaa573b8343044b166be28399
-cp %{_builddir}/kpeople-5.89.0/README.md.license %{buildroot}/usr/share/package-licenses/kpeople/37d1ccdb1e19e25429b2c910ddfef5c7242f7b62
+cp %{_builddir}/kpeople-5.90.0/LICENSES/CC0-1.0.txt %{buildroot}/usr/share/package-licenses/kpeople/82da472f6d00dc5f0a651f33ebb320aa9c7b08d0
+cp %{_builddir}/kpeople-5.90.0/LICENSES/LGPL-2.1-or-later.txt %{buildroot}/usr/share/package-licenses/kpeople/6f1f675aa5f6a2bbaa573b8343044b166be28399
+cp %{_builddir}/kpeople-5.90.0/README.md.license %{buildroot}/usr/share/package-licenses/kpeople/37d1ccdb1e19e25429b2c910ddfef5c7242f7b62
 pushd clr-build
 %make_install
 popd
@@ -175,11 +172,11 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5People.so.5
-/usr/lib64/libKF5People.so.5.89.0
+/usr/lib64/libKF5People.so.5.90.0
 /usr/lib64/libKF5PeopleBackend.so.5
-/usr/lib64/libKF5PeopleBackend.so.5.89.0
+/usr/lib64/libKF5PeopleBackend.so.5.90.0
 /usr/lib64/libKF5PeopleWidgets.so.5
-/usr/lib64/libKF5PeopleWidgets.so.5.89.0
+/usr/lib64/libKF5PeopleWidgets.so.5.90.0
 /usr/lib64/qt5/qml/org/kde/people/libKF5PeopleDeclarative.so
 /usr/lib64/qt5/qml/org/kde/people/qmldir
 
