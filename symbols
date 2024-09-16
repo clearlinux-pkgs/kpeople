@@ -1,227 +1,43 @@
-libKF6People.so.6:PersonManager::qt_metacall(QMetaObject::Call, int, void**)
-libKF6People.so.6:PersonManager::qt_metacast(char const*)
-libKF6People.so.6:PersonManager::mergeContacts(QList<QString> const&)
-libKF6People.so.6:PersonManager::unmergeContact(QString const&)
-libKF6People.so.6:PersonManager::contactAddedToPerson(QString const&, QString const&)
-libKF6People.so.6:PersonManager::contactRemovedFromPerson(QString const&)
-libKF6People.so.6:PersonManager::instance(QString const&)
-libKF6People.so.6:PersonManager::PersonManager(QString const&, QObject*)
-libKF6People.so.6:PersonManager::PersonManager(QString const&, QObject*)
-libKF6People.so.6:PersonManager::~PersonManager()
-libKF6People.so.6:PersonManager::~PersonManager()
-libKF6People.so.6:PersonManager::~PersonManager()
-libKF6People.so.6:KPeople::PersonData::dataChanged()
-libKF6People.so.6:KPeople::PersonData::qt_metacall(QMetaObject::Call, int, void**)
-libKF6People.so.6:KPeople::PersonData::qt_metacast(char const*)
-libKF6People.so.6:KPeople::PersonData::onContactChanged()
-libKF6People.so.6:KPeople::PersonData::setContactCustomProperty(QString const&, QVariant const&)
-libKF6People.so.6:KPeople::PersonData::PersonData(QString const&, QObject*)
-libKF6People.so.6:KPeople::PersonData::PersonData(QString const&, QObject*)
-libKF6People.so.6:KPeople::PersonData::~PersonData()
-libKF6People.so.6:KPeople::PersonData::~PersonData()
-libKF6People.so.6:KPeople::PersonData::~PersonData()
-libKF6People.so.6:KPeople::PersonsModel::qt_metacall(QMetaObject::Call, int, void**)
-libKF6People.so.6:KPeople::PersonsModel::qt_metacast(char const*)
-libKF6People.so.6:KPeople::PersonsModel::modelInitialized(bool)
-libKF6People.so.6:KPeople::PersonsModel::get(int, int)
-libKF6People.so.6:KPeople::PersonsModel::PersonsModel(QObject*)
-libKF6People.so.6:KPeople::PersonsModel::PersonsModel(QObject*)
-libKF6People.so.6:KPeople::PersonsModel::~PersonsModel()
-libKF6People.so.6:KPeople::PersonsModel::~PersonsModel()
-libKF6People.so.6:KPeople::PersonsModel::~PersonsModel()
-libKF6People.so.6:KPeople::MatchesSolver::qt_metacall(QMetaObject::Call, int, void**)
-libKF6People.so.6:KPeople::MatchesSolver::qt_metacast(char const*)
-libKF6People.so.6:KPeople::MatchesSolver::startMatching()
-libKF6People.so.6:KPeople::MatchesSolver::start()
-libKF6People.so.6:KPeople::MatchesSolver::MatchesSolver(QList<KPeople::Match> const&, KPeople::PersonsModel*, QObject*)
-libKF6People.so.6:KPeople::MatchesSolver::MatchesSolver(QList<KPeople::Match> const&, KPeople::PersonsModel*, QObject*)
-libKF6People.so.6:KPeople::mergeContacts(QList<QString> const&)
-libKF6People.so.6:KPeople::unmergeContact(QString const&)
-libKF6People.so.6:KPeople::DuplicatesFinder::qt_metacall(QMetaObject::Call, int, void**)
-libKF6People.so.6:KPeople::DuplicatesFinder::qt_metacast(char const*)
-libKF6People.so.6:KPeople::DuplicatesFinder::doSpecificSearch()
-libKF6People.so.6:KPeople::DuplicatesFinder::setSpecificPerson(QString const&)
-libKF6People.so.6:KPeople::DuplicatesFinder::start()
 libKF6People.so.6:KPeople::DuplicatesFinder::doSearch()
-libKF6People.so.6:KPeople::DuplicatesFinder::DuplicatesFinder(KPeople::PersonsModel*, QObject*)
-libKF6People.so.6:KPeople::DuplicatesFinder::DuplicatesFinder(KPeople::PersonsModel*, QObject*)
-libKF6People.so.6:KPeople::actionsForPerson(QString const&, QObject*)
-libKF6People.so.6:KPeople::PersonPluginManager::addContact(QMap<QString, QVariant> const&)
-libKF6People.so.6:KPeople::PersonPluginManager::dataSource(QString const&)
-libKF6People.so.6:KPeople::PersonPluginManager::addDataSource(QString const&, KPeople::BasePersonsDataSource*)
-libKF6People.so.6:KPeople::PersonPluginManager::deleteContact(QString const&)
+libKF6People.so.6:KPeople::DuplicatesFinder::doSpecificSearch()
+libKF6People.so.6:KPeople::DuplicatesFinder::start()
+libKF6People.so.6:KPeople::MatchesSolver::start()
+libKF6People.so.6:KPeople::MatchesSolver::startMatching()
+libKF6People.so.6:KPeople::PersonData::dataChanged()
+libKF6People.so.6:KPeople::PersonData::onContactChanged()
+libKF6People.so.6:KPeople::PersonData::~PersonData()
 libKF6People.so.6:KPeople::PersonPluginManager::dataSourcePlugins()
-libKF6People.so.6:KPeople::PersonPluginManager::setDataSourcePlugins(QHash<QString, KPeople::BasePersonsDataSource*> const&)
 libKF6People.so.6:KPeople::PersonPluginManager::setAutoloadDataSourcePlugins(bool)
-libKF6People.so.6:KPeople::presenceSortPriority(QString const&)
-libKF6People.so.6:KPeople::iconNameForPresenceString(QString const&)
-libKF6People.so.6:KPeople::PersonsSortFilterProxyModel::qt_metacall(QMetaObject::Call, int, void**)
-libKF6People.so.6:KPeople::PersonsSortFilterProxyModel::qt_metacast(char const*)
-libKF6People.so.6:KPeople::PersonsSortFilterProxyModel::setRequiredProperties(QList<QString> const&)
-libKF6People.so.6:KPeople::PersonsSortFilterProxyModel::sort(int, Qt::SortOrder)
-libKF6People.so.6:KPeople::PersonsSortFilterProxyModel::PersonsSortFilterProxyModel(QObject*)
+libKF6People.so.6:KPeople::PersonsModel::PersonsModel(QObject*)
+libKF6People.so.6:KPeople::PersonsModel::modelInitialized(bool)
+libKF6People.so.6:KPeople::PersonsModel::~PersonsModel()
 libKF6People.so.6:KPeople::PersonsSortFilterProxyModel::PersonsSortFilterProxyModel(QObject*)
 libKF6People.so.6:KPeople::PersonsSortFilterProxyModel::~PersonsSortFilterProxyModel()
-libKF6People.so.6:KPeople::PersonsSortFilterProxyModel::~PersonsSortFilterProxyModel()
-libKF6People.so.6:KPeople::PersonsSortFilterProxyModel::~PersonsSortFilterProxyModel()
-libKF6People.so.6:KPeople::Match::matchValue(KPeople::Match::MatchReason, QExplicitlySharedDataPointer<KPeople::AbstractContact> const&)
-libKF6People.so.6:KPeople::Match::matchAt(QExplicitlySharedDataPointer<KPeople::AbstractContact> const&, QExplicitlySharedDataPointer<KPeople::AbstractContact> const&)
-libKF6People.so.6:KPeople::Match::Match(QList<KPeople::Match::MatchReason> const&, QPersistentModelIndex const&, QPersistentModelIndex const&)
-libKF6People.so.6:KPeople::Match::Match(QList<KPeople::Match::MatchReason> const&, QPersistentModelIndex const&, QPersistentModelIndex const&)
-libKF6People.so.6:PersonManager::allPersons() const
-libKF6People.so.6:PersonManager::metaObject() const
-libKF6People.so.6:PersonManager::personUriForContact(QString const&) const
-libKF6People.so.6:PersonManager::contactsForPersonUri(QString const&) const
-libKF6People.so.6:KPeople::PersonData::isEditable() const
-libKF6People.so.6:KPeople::PersonData::metaObject() const
-libKF6People.so.6:KPeople::PersonData::pictureUrl() const
-libKF6People.so.6:KPeople::PersonData::contactUris() const
-libKF6People.so.6:KPeople::PersonData::presenceIconName() const
-libKF6People.so.6:KPeople::PersonData::contactCustomProperty(QString const&) const
-libKF6People.so.6:KPeople::PersonData::name() const
-libKF6People.so.6:KPeople::PersonData::email() const
-libKF6People.so.6:KPeople::PersonData::photo() const
-libKF6People.so.6:KPeople::PersonData::groups() const
-libKF6People.so.6:KPeople::PersonData::isValid() const
-libKF6People.so.6:KPeople::PersonData::presence() const
-libKF6People.so.6:KPeople::PersonData::allEmails() const
-libKF6People.so.6:KPeople::PersonData::personUri() const
-libKF6People.so.6:KPeople::PersonsModel::metaObject() const
-libKF6People.so.6:KPeople::PersonsModel::columnCount(QModelIndex const&) const
-libKF6People.so.6:KPeople::PersonsModel::isInitialized() const
-libKF6People.so.6:KPeople::PersonsModel::indexForPersonUri(QString const&) const
-libKF6People.so.6:KPeople::PersonsModel::contactCustomProperty(QModelIndex const&, QString const&) const
-libKF6People.so.6:KPeople::PersonsModel::data(QModelIndex const&, int) const
-libKF6People.so.6:KPeople::PersonsModel::index(int, int, QModelIndex const&) const
-libKF6People.so.6:KPeople::PersonsModel::parent(QModelIndex const&) const
-libKF6People.so.6:KPeople::PersonsModel::rowCount(QModelIndex const&) const
-libKF6People.so.6:KPeople::PersonsModel::roleNames() const
-libKF6People.so.6:KPeople::MatchesSolver::metaObject() const
-libKF6People.so.6:KPeople::DuplicatesFinder::metaObject() const
-libKF6People.so.6:KPeople::DuplicatesFinder::results() const
-libKF6People.so.6:KPeople::PersonsSortFilterProxyModel::metaObject() const
-libKF6People.so.6:KPeople::PersonsSortFilterProxyModel::filterAcceptsRow(int, QModelIndex const&) const
-libKF6People.so.6:KPeople::PersonsSortFilterProxyModel::requiredProperties() const
-libKF6People.so.6:KPeople::Match::matchReasons() const
-libKF6People.so.6:KPeople::Match::operator==(KPeople::Match const&) const
-libKF6People.so.6:KPeople::Match::operator<(KPeople::Match const&) const
-libKF6PeopleBackend.so.6:DefaultContactMonitor::qt_metacall(QMetaObject::Call, int, void**)
-libKF6PeopleBackend.so.6:DefaultContactMonitor::qt_metacast(char const*)
-libKF6PeopleBackend.so.6:DefaultContactMonitor::onContactAdded(QString const&, QExplicitlySharedDataPointer<KPeople::AbstractContact> const&)
-libKF6PeopleBackend.so.6:DefaultContactMonitor::onContactChanged(QString const&, QExplicitlySharedDataPointer<KPeople::AbstractContact> const&)
-libKF6PeopleBackend.so.6:DefaultContactMonitor::onContactRemoved(QString const&)
-libKF6PeopleBackend.so.6:DefaultContactMonitor::DefaultContactMonitor(QString const&, QSharedPointer<KPeople::AllContactsMonitor> const&)
-libKF6PeopleBackend.so.6:DefaultContactMonitor::DefaultContactMonitor(QString const&, QSharedPointer<KPeople::AllContactsMonitor> const&)
-libKF6PeopleBackend.so.6:KPeople::ContactMonitor::setContact(QExplicitlySharedDataPointer<KPeople::AbstractContact> const&)
-libKF6PeopleBackend.so.6:KPeople::ContactMonitor::qt_metacall(QMetaObject::Call, int, void**)
-libKF6PeopleBackend.so.6:KPeople::ContactMonitor::qt_metacast(char const*)
-libKF6PeopleBackend.so.6:KPeople::ContactMonitor::contactChanged()
-libKF6PeopleBackend.so.6:KPeople::ContactMonitor::ContactMonitor(QString const&)
-libKF6PeopleBackend.so.6:KPeople::ContactMonitor::ContactMonitor(QString const&)
-libKF6PeopleBackend.so.6:KPeople::ContactMonitor::~ContactMonitor()
-libKF6PeopleBackend.so.6:KPeople::ContactMonitor::~ContactMonitor()
-libKF6PeopleBackend.so.6:KPeople::ContactMonitor::~ContactMonitor()
-libKF6PeopleBackend.so.6:KPeople::AbstractContact::AbstractContact()
+libKF6People.so.6:PersonManager::~PersonManager()
 libKF6PeopleBackend.so.6:KPeople::AbstractContact::AbstractContact()
 libKF6PeopleBackend.so.6:KPeople::AbstractContact::~AbstractContact()
-libKF6PeopleBackend.so.6:KPeople::AbstractContact::~AbstractContact()
-libKF6PeopleBackend.so.6:KPeople::AbstractContact::~AbstractContact()
-libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::qt_metacall(QMetaObject::Call, int, void**)
-libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::qt_metacast(char const*)
-libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::contactAdded(QString const&, QExplicitlySharedDataPointer<KPeople::AbstractContact> const&)
-libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::contactChanged(QString const&, QExplicitlySharedDataPointer<KPeople::AbstractContact> const&)
-libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::contactRemoved(QString const&)
-libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::initialFetchComplete(bool)
-libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::emitInitialFetchComplete(bool)
+libKF6PeopleBackend.so.6:KPeople::AbstractEditableContact::AbstractEditableContact()
+libKF6PeopleBackend.so.6:KPeople::AbstractEditableContact::~AbstractEditableContact()
+libKF6PeopleBackend.so.6:KPeople::AbstractPersonAction::AbstractPersonAction(QObject*)
+libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::AllContactsMonitor()
 libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::contacts()
-libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::AllContactsMonitor()
-libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::AllContactsMonitor()
+libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::emitInitialFetchComplete(bool)
+libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::initialFetchComplete(bool)
 libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::~AllContactsMonitor()
-libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::~AllContactsMonitor()
-libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::~AllContactsMonitor()
-libKF6PeopleBackend.so.6:KPeople::AbstractPersonAction::qt_metacall(QMetaObject::Call, int, void**)
-libKF6PeopleBackend.so.6:KPeople::AbstractPersonAction::qt_metacast(char const*)
-libKF6PeopleBackend.so.6:KPeople::AbstractPersonAction::AbstractPersonAction(QObject*)
-libKF6PeopleBackend.so.6:KPeople::AbstractPersonAction::AbstractPersonAction(QObject*)
-libKF6PeopleBackend.so.6:KPeople::BasePersonsDataSource::qt_metacall(QMetaObject::Call, int, void**)
-libKF6PeopleBackend.so.6:KPeople::BasePersonsDataSource::qt_metacast(char const*)
-libKF6PeopleBackend.so.6:KPeople::BasePersonsDataSource::contactMonitor(QString const&)
 libKF6PeopleBackend.so.6:KPeople::BasePersonsDataSource::allContactsMonitor()
-libKF6PeopleBackend.so.6:KPeople::BasePersonsDataSource::createContactMonitor(QString const&)
-libKF6PeopleBackend.so.6:KPeople::BasePersonsDataSource::BasePersonsDataSource(QObject*, QList<QVariant> const&)
-libKF6PeopleBackend.so.6:KPeople::BasePersonsDataSource::BasePersonsDataSource(QObject*, QList<QVariant> const&)
 libKF6PeopleBackend.so.6:KPeople::BasePersonsDataSource::~BasePersonsDataSource()
-libKF6PeopleBackend.so.6:KPeople::BasePersonsDataSource::~BasePersonsDataSource()
-libKF6PeopleBackend.so.6:KPeople::BasePersonsDataSource::~BasePersonsDataSource()
-libKF6PeopleBackend.so.6:KPeople::AbstractEditableContact::AbstractEditableContact()
-libKF6PeopleBackend.so.6:KPeople::AbstractEditableContact::AbstractEditableContact()
-libKF6PeopleBackend.so.6:KPeople::AbstractEditableContact::~AbstractEditableContact()
-libKF6PeopleBackend.so.6:KPeople::AbstractEditableContact::~AbstractEditableContact()
-libKF6PeopleBackend.so.6:KPeople::AbstractEditableContact::~AbstractEditableContact()
-libKF6PeopleBackend.so.6:KPeople::BasePersonsDataSourceV2::qt_metacall(QMetaObject::Call, int, void**)
-libKF6PeopleBackend.so.6:KPeople::BasePersonsDataSourceV2::qt_metacast(char const*)
-libKF6PeopleBackend.so.6:KPeople::BasePersonsDataSourceV2::BasePersonsDataSourceV2(QObject*, QList<QVariant> const&)
-libKF6PeopleBackend.so.6:KPeople::BasePersonsDataSourceV2::BasePersonsDataSourceV2(QObject*, QList<QVariant> const&)
-libKF6PeopleBackend.so.6:DefaultContactMonitor::metaObject() const
-libKF6PeopleBackend.so.6:KPeople::ContactMonitor::contactUri() const
-libKF6PeopleBackend.so.6:KPeople::ContactMonitor::metaObject() const
-libKF6PeopleBackend.so.6:KPeople::ContactMonitor::contact() const
-libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::metaObject() const
-libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::initialFetchSuccess() const
-libKF6PeopleBackend.so.6:KPeople::AllContactsMonitor::isInitialFetchComplete() const
-libKF6PeopleBackend.so.6:KPeople::AbstractPersonAction::metaObject() const
-libKF6PeopleBackend.so.6:KPeople::BasePersonsDataSource::metaObject() const
-libKF6PeopleBackend.so.6:KPeople::BasePersonsDataSourceV2::metaObject() const
-libKF6PeopleWidgets.so.6:MergeDelegate::pictureSize()
-libKF6PeopleWidgets.so.6:MergeDelegate::qt_metacall(QMetaObject::Call, int, void**)
-libKF6PeopleWidgets.so.6:MergeDelegate::qt_metacast(char const*)
-libKF6PeopleWidgets.so.6:MergeDelegate::onClickContactParent(QModelIndex const&)
-libKF6PeopleWidgets.so.6:MergeDelegate::onSelectedContactsChanged(QItemSelection const&, QItemSelection const&)
-libKF6PeopleWidgets.so.6:MergeDelegate::MergeDelegate(QAbstractItemView*)
-libKF6PeopleWidgets.so.6:MergeDelegate::MergeDelegate(QAbstractItemView*)
-libKF6PeopleWidgets.so.6:MergeDelegate::~MergeDelegate()
-libKF6PeopleWidgets.so.6:MergeDelegate::~MergeDelegate()
-libKF6PeopleWidgets.so.6:MergeDelegate::~MergeDelegate()
-libKF6PeopleWidgets.so.6:KPeople::MergeDialog::qt_metacall(QMetaObject::Call, int, void**)
-libKF6PeopleWidgets.so.6:KPeople::MergeDialog::qt_metacast(char const*)
+libKF6PeopleBackend.so.6:KPeople::ContactMonitor::contactChanged()
+libKF6PeopleBackend.so.6:KPeople::ContactMonitor::~ContactMonitor()
+libKF6PeopleWidgets.so.6:KPeople::AbstractFieldWidgetFactory::AbstractFieldWidgetFactory(QObject*)
+libKF6PeopleWidgets.so.6:KPeople::AbstractFieldWidgetFactory::~AbstractFieldWidgetFactory()
+libKF6PeopleWidgets.so.6:KPeople::MergeDialog::MergeDialog(QWidget*)
 libKF6PeopleWidgets.so.6:KPeople::MergeDialog::setPersonsModel(KPeople::PersonsModel*)
-libKF6PeopleWidgets.so.6:KPeople::MergeDialog::MergeDialog(QWidget*)
-libKF6PeopleWidgets.so.6:KPeople::MergeDialog::MergeDialog(QWidget*)
 libKF6PeopleWidgets.so.6:KPeople::MergeDialog::~MergeDialog()
-libKF6PeopleWidgets.so.6:KPeople::MergeDialog::~MergeDialog()
-libKF6PeopleWidgets.so.6:KPeople::MergeDialog::~MergeDialog()
-libKF6PeopleWidgets.so.6:KPeople::PersonDetailsView::qt_metacall(QMetaObject::Call, int, void**)
-libKF6PeopleWidgets.so.6:KPeople::PersonDetailsView::qt_metacast(char const*)
-libKF6PeopleWidgets.so.6:KPeople::PersonDetailsView::setPerson(KPeople::PersonData*)
-libKF6PeopleWidgets.so.6:KPeople::PersonDetailsView::PersonDetailsView(QWidget*)
-libKF6PeopleWidgets.so.6:KPeople::PersonDetailsView::PersonDetailsView(QWidget*)
-libKF6PeopleWidgets.so.6:KPeople::PersonDetailsView::~PersonDetailsView()
-libKF6PeopleWidgets.so.6:KPeople::PersonDetailsView::~PersonDetailsView()
-libKF6PeopleWidgets.so.6:KPeople::PersonDetailsView::~PersonDetailsView()
-libKF6PeopleWidgets.so.6:KPeople::PersonDetailsDialog::qt_metacall(QMetaObject::Call, int, void**)
-libKF6PeopleWidgets.so.6:KPeople::PersonDetailsDialog::qt_metacast(char const*)
 libKF6PeopleWidgets.so.6:KPeople::PersonDetailsDialog::setPerson(KPeople::PersonData*)
-libKF6PeopleWidgets.so.6:KPeople::PersonDetailsDialog::PersonDetailsDialog(QWidget*, QFlags<Qt::WindowType>)
-libKF6PeopleWidgets.so.6:KPeople::PersonDetailsDialog::PersonDetailsDialog(QWidget*, QFlags<Qt::WindowType>)
 libKF6PeopleWidgets.so.6:KPeople::PersonDetailsDialog::~PersonDetailsDialog()
-libKF6PeopleWidgets.so.6:KPeople::PersonDetailsDialog::~PersonDetailsDialog()
-libKF6PeopleWidgets.so.6:KPeople::PersonDetailsDialog::~PersonDetailsDialog()
-libKF6PeopleWidgets.so.6:KPeople::AbstractFieldWidgetFactory::qt_metacall(QMetaObject::Call, int, void**)
-libKF6PeopleWidgets.so.6:KPeople::AbstractFieldWidgetFactory::qt_metacast(char const*)
-libKF6PeopleWidgets.so.6:KPeople::AbstractFieldWidgetFactory::AbstractFieldWidgetFactory(QObject*)
-libKF6PeopleWidgets.so.6:KPeople::AbstractFieldWidgetFactory::AbstractFieldWidgetFactory(QObject*)
-libKF6PeopleWidgets.so.6:KPeople::AbstractFieldWidgetFactory::~AbstractFieldWidgetFactory()
-libKF6PeopleWidgets.so.6:KPeople::AbstractFieldWidgetFactory::~AbstractFieldWidgetFactory()
-libKF6PeopleWidgets.so.6:KPeople::AbstractFieldWidgetFactory::~AbstractFieldWidgetFactory()
-libKF6PeopleWidgets.so.6:MergeDelegate::metaObject() const
-libKF6PeopleWidgets.so.6:MergeDelegate::paint(QPainter*, QStyleOptionViewItem const&, QModelIndex const&) const
-libKF6PeopleWidgets.so.6:KPeople::MergeDialog::metaObject() const
-libKF6PeopleWidgets.so.6:KPeople::PersonDetailsView::metaObject() const
-libKF6PeopleWidgets.so.6:KPeople::PersonDetailsDialog::metaObject() const
-libKF6PeopleWidgets.so.6:KPeople::AbstractFieldWidgetFactory::metaObject() const
-libKF6PeopleWidgets.so.6:non-virtual thunk to KPeople::MergeDialog::~MergeDialog()
-libKF6PeopleWidgets.so.6:non-virtual thunk to KPeople::MergeDialog::~MergeDialog()
-libKF6PeopleWidgets.so.6:non-virtual thunk to KPeople::PersonDetailsView::~PersonDetailsView()
-libKF6PeopleWidgets.so.6:non-virtual thunk to KPeople::PersonDetailsView::~PersonDetailsView()
-libKF6PeopleWidgets.so.6:non-virtual thunk to KPeople::PersonDetailsDialog::~PersonDetailsDialog()
-libKF6PeopleWidgets.so.6:non-virtual thunk to KPeople::PersonDetailsDialog::~PersonDetailsDialog()
+libKF6PeopleWidgets.so.6:KPeople::PersonDetailsView::PersonDetailsView(QWidget*)
+libKF6PeopleWidgets.so.6:KPeople::PersonDetailsView::setPerson(KPeople::PersonData*)
+libKF6PeopleWidgets.so.6:KPeople::PersonDetailsView::~PersonDetailsView()
+libKF6PeopleWidgets.so.6:MergeDelegate::MergeDelegate(QAbstractItemView*)
+libKF6PeopleWidgets.so.6:MergeDelegate::pictureSize()
+libKF6PeopleWidgets.so.6:MergeDelegate::~MergeDelegate()
